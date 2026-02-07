@@ -16,3 +16,16 @@ console.log(Math.sin((90 * Math.PI)/180));
 console.log(Math.cos((60 * Math.PI)/180).toFixed(2));
 //Random Number calculation..
 console.log(Math.floor(Math.random().toFixed(2)*10 + 1));
+
+//Date Function
+let myDate = new Date();
+console.log(myDate);
+let Mydate = Date.now();
+console.log(Mydate);
+let r = myDate.getFullYear();
+let s = myDate.getUTCDate();
+let t = myDate.setFullYear(2026, 1,7);
+console.log(r);
+console.log(s);
+console.log(t);
+
