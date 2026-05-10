@@ -31,3 +31,25 @@ class Car{
 const myCar = new Car('Toyota', 2026);
 console.log(myCar);
 
+//এইটা জাভাসচ্রিপ্ট এর অবজেক্ট অরিয়েন্টড প্রোগ্রামিং প্রাকটিস...
+class Car{
+    constructor (brand){
+        this.carname = brand;
+    }
+    present(){
+        return 'I have a ' + this.carname;
+    }
+}
+
+class modelCar extends Car{
+    constructor(brand, mode){
+        super(brand);
+        this.mode = mode;
+    }
+    show(){
+        return this.present() + `, it's a `+ this.mode;
+    }
+}
+
+const myNewCar = new modelCar('BMW', 'MKB2356');
+console.log(myNewCar.show());
