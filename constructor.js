@@ -53,3 +53,34 @@ class modelCar extends Car{
 
 const myNewCar = new modelCar('BMW', 'MKB2356');
 console.log(myNewCar.show());
+
+//OOP in Javascript....
+//Class define....
+class animale{
+    constructor (naam){
+        this.naam = naam;
+    }
+    speak(){
+        console.log(`${this.naam} makes a noise`);
+    }
+}
+let myAnimale = new animale('Orange Cat');
+myAnimale.speak();
+
+//Encapsulation.....
+
+class car{
+    constructor (brand){
+        this.brand = brand;
+    }
+    get brand(){
+        return this._brand;
+    }
+    set brand(newBrand){
+        this._brand = newBrand;
+    }
+}
+let myCar = new car ('Ford');
+console.log(myCar.brand);
+myCar.brand = 'BMW';
+console.log(myCar.brand);
