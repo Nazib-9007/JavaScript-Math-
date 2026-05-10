@@ -84,3 +84,53 @@ let myCar = new car ('Ford');
 console.log(myCar.brand);
 myCar.brand = 'BMW';
 console.log(myCar.brand);
+
+//OOP in Javascript....
+//Class define....
+class animale{
+    constructor (naam){
+        this.naam = naam;
+    }
+    speak(){
+        console.log(`${this.naam} makes a noise`);
+    }
+}
+let myAnimale = new animale('Orange Cat');
+myAnimale.speak();
+//Encapsulation.....
+class car{
+    constructor (brand){
+        this.brand = brand;
+    }
+    get brand(){
+        return this._brand;
+    }
+    set brand(newBrand){
+        this._brand = newBrand;
+    }
+}
+let myCar = new car ('Ford');
+console.log(myCar.brand);
+myCar.brand = 'BMW';
+console.log(myCar.brand);
+
+//Inheritance....
+
+class Animale {
+    constructor (animaleNaam){
+        this.animaleNaam = animaleNaam;
+    }
+
+    speak(){
+        console.log(`${this.animaleNaam} makes a noise`);
+    }
+}
+
+class Cat extends Animale{
+    speak(){
+        console.log(`${this.animaleNaam} braks`);
+    }
+}
+
+let c = new Cat('Orange Cat');
+c.speak();
