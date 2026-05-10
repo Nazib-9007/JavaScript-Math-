@@ -17,3 +17,17 @@ function getInteger(min, max){
     return Math.floor(Math.random()*(max-min))+min;
 }
 console.log(getInteger(5,10));
+//CLass and use strict....
+class Car{
+    constructor(name, year){
+        this.name = name;
+        this.year = year;
+    }
+    age(){
+        const date = new Date();
+        return date.getFullYear() - this.year;
+    }
+}
+const myCar = new Car('Toyota', 2026);
+console.log(myCar);
+
